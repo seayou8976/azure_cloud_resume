@@ -8,6 +8,11 @@ a {
     text-decoration: none;
 }
 
+hr {
+    margin: 0;
+    margin-top: 1%;
+}
+
 table {
     border: 0px;
     border-collapse: collapse;
@@ -95,6 +100,11 @@ top: 5px;
 right: -5px;
 transform: rotate(1deg);
 z-index: -2;
+}
+
+#downloadLink {
+    float: right;
+    font-size: 0.8rem;
 }
 
 #name {
