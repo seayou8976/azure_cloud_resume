@@ -102,6 +102,12 @@ transform: rotate(1deg);
 z-index: -2;
 }
 
+#view-count {
+    color: #001F3F;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
 #downloadLink {
     float: right;
     font-size: 0.8rem;
