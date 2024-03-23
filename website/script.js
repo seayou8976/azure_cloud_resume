@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", async function() {
                 method: method,
             });
             const data = await response.text();
-            console.log(data); // Log the response from the function
+            // console.log(data); // Log the response from the function
             return data; // Return the response data
         } catch (error) {
             console.error('Failed to update or retrieve view count', error);
