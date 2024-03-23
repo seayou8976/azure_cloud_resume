@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", async function() {
-    const updateViewCount = async (action) => {
+    const updateViewCount = async (method) => {
         try {
-            const response = await fetch(`https://sy4azureresume-visitorcount.azurewebsites.net?action=${action}`, {
-                method: 'POST',
+            const response = await fetch(`https://sy4azureresume-visitorcount.azurewebsites.net/api/http_trigger`, {
+                method: method,
             });
             const data = await response.text();
             console.log(data); // Log the response from the function
@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", async function() {
     };
 
     // Update the view count and then update the text on the webpage
-    await updateViewCount('update');
-    const count = await updateViewCount('retrieve');
+    await updateViewCount('POST');
+    const count = await updateViewCount('GET');
 
     // Use the retrieved count to update the text on the webpage
     const visitorCount = count ? count.toString().padStart(4, '0') : '0000';
