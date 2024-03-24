@@ -26,8 +26,8 @@ resource "azurerm_storage_account" "sy4sa" {
   account_kind             = "StorageV2"
 
   static_website {
-    index_document         = "index.html"
-    error_404_document     = "404.html" 
+    index_document     = "index.html"
+    error_404_document = "404.html"
   }
 }
 
