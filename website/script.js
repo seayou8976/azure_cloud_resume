@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   const updateViewCount = async (method) => {
     try {
       const response = await fetch(
-        `https://sy4azureresume-visitorcount.azurewebsites.net/api/http_trigger`,
+        `https://sy4faresume.azurewebsites.net/api/http_trigger`,
         {
           method: method,
         }
