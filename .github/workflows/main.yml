@@ -17,17 +17,17 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-            az storage blob delete-batch --account-name sy4azureresume --auth-mode key -s '$web'
+            az storage blob delete-batch --account-name sy4saresume --auth-mode key -s '$web'
     - name: Upload to blob storage
       uses: azure/CLI@v1
       with:
         inlineScript: |
-            az storage blob upload-batch --account-name sy4azureresume --auth-mode key -d '$web' -s website --overwrite true
+            az storage blob upload-batch --account-name sy4saresume --auth-mode key -d '$web' -s website --overwrite true
     - name: Purge CDN endpoint
       uses: azure/CLI@v1
       with:
         inlineScript: |
-           az cdn endpoint purge --content-paths  "/*" --profile-name "sy4azureresumecdn" --name "sy4azureresume" --resource-group "sy4azureresume"
+           az cdn endpoint purge --content-paths  "/*" --profile-name "sy4cdnresume" --name "sy4endresume" --resource-group "sy4rgresume"
 
   # Azure logout
     - name: logout
