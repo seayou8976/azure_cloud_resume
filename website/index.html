@@ -31,7 +31,8 @@
                     </div>
                     <div class="experience-content">
                         <div class="experience-company">Credit Acceptance - Southfield, MI (Remote)<span class="experience-year">Oct 2022 - Present</span></div>
-                        <div class="experience-title">Desktop Systems Administrator II</div>
+                        <!-- <div class="experience-title">Senior Endpoint Systems Engineer<span class="experience-year">Dec 2024 - Present</span></div> -->
+                        <div class="experience-title">Endpoint Systems Engineer II</div>
                         <div class="experience-list">
                             <ul>
                                 <li>Implemented Autopilot for Pre-Provisioned Deployment, reducing new hire time-to-work by 90%.</li>
@@ -77,7 +78,6 @@
                         <div class="experience-company">Next I.T. - Muskegon, MI<span class="experience-year">Apr 2015 - Aug 2017</span></div>
                         <div class="experience-title">Onsite Support Technician<span class="experience-year">Dec 2015 - Aug 2017</span></div>
                         <div class="experience-title">Helpdesk Technician<span class="experience-year">Apr 2015 - Dec 2015</span></div>
-                        <!-- <div class="experience-list html2pdf__page-break"> -->
                             <ul>
                                 <li>Handled incoming support tickets, ensuring timely and effective resolution for 40+ managed services clients.</li>
                             </ul>
@@ -112,7 +112,6 @@
                     <div class="experience-list">
                         <ul>
                             <li>Foundational computer science concepts and programming skills in C, Python, SQL, HTML, CSS, and JavaScript.</li>
-                            <!-- <li>Projects in algorithms, data structures, web development, and software engineering.</li> -->
                         </ul>
                     </div>
                     <div class="body-header competency-header">
@@ -122,7 +121,7 @@
                         <ul>
                             <li><b>Certifications:</b> Microsoft 365 Certified: Endpoint Administrator; Microsoft Certified: Azure Administrator; ITIL Foundation</li>
                             <li><b>Skills:</b> Windows; MacOS; Android; iOS; Azure, Intune, Autopilot; Jamf; Active Directory, DHCP, DNS; PowerShell, Bash</li>
-                            <li><b>Interests:</b> Homelab Projects; Watchmaking; DJing; Tabletop & video games; Game development (Godot & GDScript)</li>
+                            <li><b>Interests:</b> Homelab; Watchmaking; DJing; Astronomy; Locksport; Tabletop & video games; Game development</li>
                         </ul>                        
                     </div>
                 </div>
@@ -134,12 +133,12 @@
             document.getElementById('downloadLink').addEventListener('click', function() {
                 var element = document.getElementById('resume');
                 html2pdf(element, {
-                    margin: [0.325, 0.5],
+                    margin: [0.2, 0.5],
                     filename: 'Sean_Young.pdf',
                     enableLinks: true,
                     image: { type: 'jpeg', quality: 0.98 },
                     html2canvas: { scale: 1, logging: true },
-                    jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+                    jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
                 });
                 //html2pdf().set({
                 //pagebreak: { mode: 'legacy' }
